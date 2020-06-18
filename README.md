@@ -6,7 +6,7 @@ The program takes an audio file, uses pydub library to split the audio file into
 The program uses speech recognition library to transcribe the audio file into text.
 
 
-##Set-up
+## Set-up
 
 Clone the repository
 
@@ -19,7 +19,7 @@ Also, may have to set up ffmpeg. https://ffmpeg.org/
 Also, add ffmpeg to system variable list.
 
 
-##Run
+## Run
 
 python main.py [audio filename]
 
@@ -29,7 +29,7 @@ ex: python main.py aditya.mp4
 Sample audio file aditya.mp4 present in the repository.
 
 
-##Output
+## Output
 
 On command line, you will get:
 
@@ -43,5 +43,5 @@ The word frequency
 In output folder, you will get the audio files generated using silence between words.
 
 
-###Check research.txt for more detail.
+### Check research.txt for more detail.
 
