@@ -14,7 +14,7 @@ The program uses speech recognition library to transcribe the audio file into te
 
 * pip install SpeechRecognition
 
-* Also, may have to set up [ffmpeg.][link 1]
+* Also, may have to set up [ffmpeg.](https://ffmpeg.org/)
 
 * Also, add ffmpeg to system variable list.
 
