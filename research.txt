@@ -1,6 +1,11 @@
 While at Samsung, I researched a similar topic, so I started with Kaldi and CMU Sphinx.
-These libraries didn't exactly have what I thought we needed, so after doing some research on Google, I came across pydub. At first, I thought we could directly count words in a file and use speech recognition APIs to convert the audio to speech, but I thought that would defeat the purpose of the experiment. So instead started looking for audio handling python libraries.
-In pydub, we can split the audio on silence, but first, we have to define silence. We have to define the minimum length of silence and the amplitude. I tried out many different values and decided to use 20ms as the minimum length and -16 dBFS for amplitude. After processing, we have chunks of audio.
+These libraries didn't exactly have what I thought we needed, so after doing some research on Google, I came across pydub.
+At first, I thought we could directly count words in a file and use speech recognition APIs to convert the audio to speech, but I thought that would defeat the purpose of the experiment.
+So instead started looking for audio handling python libraries.
+
+In pydub, we can split the audio on silence, but first, we have to define silence.
+We have to define the minimum length of silence and the amplitude. I tried out many different values and decided to use 20ms as the minimum length and -16 dBFS for amplitude.
+After processing, we have chunks of audio.
 Calculated number of silences = number of chunks-1
 Calculated speed = number of chunks/duration of the audio file.
 Then using speech recognition library from python converted audio into the text to get the word frequency.
