@@ -45,4 +45,3 @@ In output folder, you will get the audio files generated using silence between w
 
 ### Check research.txt for more detail.
 
-[link 1][https://ffmpeg.org/]
