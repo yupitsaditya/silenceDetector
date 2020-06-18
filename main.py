@@ -21,6 +21,12 @@ def divideAudioIntoChunksBySilence(src):
         silence_thresh = -16#-16
     )
 
+    if not os.path.exists('output'):
+        os.makedirs('output')
+    # print("Exporting chunk{0}.mp3.".format(i))
+    filelist = [ f for f in os.listdir('./output') ]
+    for f in filelist:
+        os.remove(os.path.join('./output', f))
     # Process each chunk with your parameters
     print("Check output folder for individual word audio")
     for i, chunk in enumerate(chunks):
@@ -31,9 +37,6 @@ def divideAudioIntoChunksBySilence(src):
         audio_chunk = silence_chunk + chunk + silence_chunk
 
         # Export the audio chunk with new bitrate.
-        if not os.path.exists('output'):
-            os.makedirs('output')
-        # print("Exporting chunk{0}.mp3.".format(i))
         
         audio_chunk.export(
             "./output/chunk{0}.wav".format(i),
