@@ -8,11 +8,11 @@ The program uses speech recognition library to transcribe the audio file into te
 
 ## Set-up
 
-Clone the repository
+* Clone the repository
 
-pip install pydub
+* pip install pydub
 
-pip install SpeechRecognition
+* pip install SpeechRecognition
 
 Also, may have to set up ffmpeg. https://ffmpeg.org/
 
