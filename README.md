@@ -14,9 +14,9 @@ The program uses speech recognition library to transcribe the audio file into te
 
 * pip install SpeechRecognition
 
-Also, may have to set up ffmpeg. https://ffmpeg.org/
+* Also, may have to set up ffmpeg. https://ffmpeg.org/
 
-Also, add ffmpeg to system variable list.
+* Also, add ffmpeg to system variable list.
 
 
 ## Run
@@ -33,11 +33,11 @@ Sample audio file aditya.mp4 present in the repository.
 
 On command line, you will get:
 
-The number of silences in the audio file.
+*The number of silences in the audio file.
 
-The speed in words/minute
+*The speed in words/minute
 
-The word frequency
+*The word frequency
 
 
 In output folder, you will get the audio files generated using silence between words.
