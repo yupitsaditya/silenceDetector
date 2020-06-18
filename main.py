@@ -35,12 +35,12 @@ def divideAudioIntoChunksBySilence(src):
             os.makedirs('output')
         # print("Exporting chunk{0}.mp3.".format(i))
         
-        chunk.export(
-            "./output/chunk{0}.mp3".format(i),
+        audio_chunk.export(
+            "./output/chunk{0}.wav".format(i),
             bitrate = "192k",
-            format = "mp3"
+            format = "wav"
         )
-    print("Number of silences is ",len(chunks))
+    print("Number of silences is ",len(chunks)-1)
     lenOfAudioInMin=len(audioData)/60000
     print("Number of words per minutes is ",len(chunks)/lenOfAudioInMin)
     # print("Duration of audio is ",)
