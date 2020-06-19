@@ -1,4 +1,4 @@
-# silenceDetector
+# Silence Detector
 Divide an Audio file into chunks of word
 
 [Web App For The Same](https://ict-ai-position.herokuapp.com/)
